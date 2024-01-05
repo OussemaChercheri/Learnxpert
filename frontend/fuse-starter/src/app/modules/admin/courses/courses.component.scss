@@ -1,0 +1,23 @@
+:host {
+    $imag-size: 100px;
+    $title-sm-size: 100px;
+    $title-default-size: 1fr;
+    $action-size: 150px;
+    $description-size: 1fr;
+
+    .inventory-grid {
+        grid-template-columns: 50px $title-default-size 80px;
+
+        @screen sm {
+            grid-template-columns: $imag-size $title-sm-size $description-size $action-size;
+        }
+
+        @screen md {
+            grid-template-columns: $imag-size $title-default-size $description-size $action-size;
+        }
+
+        @screen lg {
+            grid-template-columns: $imag-size $title-default-size $description-size $action-size;
+        }
+    }
+}

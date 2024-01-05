@@ -1,0 +1,256 @@
+:host {
+    ngx-dropzone {
+        aspect-ratio: 1 / 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 100px;
+        padding: 8px;
+
+        ngx-dropzone-image-preview {
+            height: 80px !important;
+            min-height: 0 !important;
+            margin: 0 !important;
+        }
+
+        ngx-dropzone-label {
+            margin: 4px auto;
+        }
+    }
+
+    ::ng-deep .mat-mdc-text-field-wrapper.mdc-text-field--outlined {
+        .mat-mdc-form-field-flex {
+            height: 100%;
+            .mat-mdc-form-field-infix {
+                height: 100%;
+
+                textarea {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .min-h-10-rem {
+        min-height: 10rem;
+    }
+
+    .preview {
+        background-color: whitesmoke;
+        margin-bottom: 20px;
+        padding: 10px;
+
+        border-radius: 8px;
+        overflow-y: auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        ::ng-deep {
+            * {
+                max-width: 100%;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-size: revert;
+                font-weight: revert;
+                margin: revert;
+            }
+
+            h1,
+            h2,
+            h3 {
+                border-bottom: 1px solid rgba(200, 200, 200, 0.3);
+            }
+
+            ol,
+            ul,
+            menu {
+                list-style: revert;
+                margin: revert;
+                padding: revert;
+            }
+
+            a,
+            a:visited {
+                color: #3e7bf4;
+            }
+
+            table {
+                margin: 20px 0px;
+            }
+
+            blockquote {
+                border-left: #5c6370 solid 5px;
+                padding-left: 10px;
+                opacity: 0.6;
+            }
+
+            :is(blockquote, .alert) p {
+                margin: 0;
+            }
+
+            table,
+            tr,
+            td,
+            th {
+                border: 1px solid #d8d8d8;
+                border-collapse: collapse;
+            }
+
+            tbody tr:nth-child(odd) {
+                background-color: #f4f4f4;
+            }
+
+            thead {
+                width: 100%;
+                background-color: #282c34;
+                color: white;
+            }
+
+            td,
+            th {
+                padding: 10px;
+                width: fit-content;
+                white-space: wrap;
+                overflow-wrap: break-word;
+            }
+
+            img {
+                border-radius: 8px;
+            }
+
+            li code,
+            p code {
+                background-color: #e5e7eb;
+                color: #242424;
+                padding: 2px 4px;
+            }
+
+            hr {
+                --tw-border-opacity: 1;
+                border-color: rgb(235 236 240 / var(--tw-border-opacity));
+                border-top-width: 0;
+                border-bottom-width: 1px;
+                display: block;
+                margin-top: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .alert {
+                padding: 0.75rem 1.25rem;
+                border-radius: 8px;
+                border: 1px solid var(--alert-border-color);
+                background-color: var(--alert-background);
+                color: var(--alert-color);
+                margin: 1.5rem 0;
+            }
+
+            .alert-success {
+                --alert-border-color: #c3e6cb;
+                --alert-background: #d4edda;
+                --alert-color: #155724;
+            }
+
+            .alert-info {
+                --alert-border-color: #b8daff;
+                --alert-background: #cce5ff;
+                --alert-color: #004085;
+            }
+
+            .alert-warning {
+                --alert-border-color: #ffeeba;
+                --alert-background: #fff3cd;
+                --alert-color: #856404;
+            }
+
+            .alert-danger {
+                --alert-border-color: #f5c6cb;
+                --alert-background: #f8d7da;
+                --alert-color: #721c24;
+            }
+
+            pre code {
+                display: block;
+                padding: 1em;
+                box-sizing: border-box;
+                font-size: 0.9rem;
+                background: #282c34;
+                color: #abb2bf;
+                border-radius: 8px;
+
+                text-wrap: balance;
+                word-wrap: break-word;
+            }
+
+            .hljs-attr,
+            .hljs-number,
+            .hljs-selector-attr,
+            .hljs-selector-class,
+            .hljs-selector-pseudo,
+            .hljs-template-variable,
+            .hljs-type,
+            .hljs-variable {
+                color: #d19a66;
+            }
+
+            .hljs-doctag,
+            .hljs-formula,
+            .hljs-keyword {
+                color: #c678dd;
+            }
+
+            .hljs-addition,
+            .hljs-attribute,
+            .hljs-meta .hljs-string,
+            .hljs-regexp,
+            .hljs-string {
+                color: #98c379;
+            }
+
+            .hljs-built_in,
+            .hljs-class .hljs-title,
+            .hljs-title.class_ {
+                color: #e6c07b;
+            }
+
+            .hljs-bullet,
+            .hljs-link,
+            .hljs-meta,
+            .hljs-selector-id,
+            .hljs-symbol,
+            .hljs-title {
+                color: #61aeee;
+            }
+
+            .hljs-deletion,
+            .hljs-name,
+            .hljs-section,
+            .hljs-selector-tag,
+            .hljs-subst {
+                color: #e06c75;
+            }
+
+            .hljs-comment,
+            .hljs-quote {
+                color: #5c6370;
+                font-style: italic;
+            }
+
+            .hljs-literal {
+                color: #56b6c2;
+            }
+        }
+    }
+}
